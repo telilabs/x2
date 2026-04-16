@@ -1,0 +1,43 @@
+{
+  "name": "@telilabs/x2",
+  "version": "0.1.0",
+  "description": "Minimal zero-dependency component framework: write JSX components, get a bundled SPA with no Webpack or Babel",
+  "main": "lib/bundle.js",
+  "bin": {
+    "x2": "bin/x2.js"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "runtime/",
+    "template/"
+  ],
+  "scripts": {
+    "test": "node test/jsx.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "keywords": [
+    "framework",
+    "frontend",
+    "jsx",
+    "components",
+    "spa",
+    "bundler",
+    "zero-dependency",
+    "lightweight",
+    "reactive"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telilabs/x2.git"
+  },
+  "homepage": "https://github.com/telilabs/x2#readme",
+  "bugs": {
+    "url": "https://github.com/telilabs/x2/issues"
+  },
+  "dependencies": {}
+}

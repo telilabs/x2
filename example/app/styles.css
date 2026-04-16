@@ -1,0 +1,163 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #1a1a2e;
+  background: #f4f5f7;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1.25rem 4rem;
+}
+
+/* ── Header ─────────────────────────────────────────────── */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0 1.25rem;
+  border-bottom: 2px solid #e2e5ea;
+  margin-bottom: 1.75rem;
+}
+
+h1 { font-size: 1.4rem; font-weight: 700; }
+
+.badge {
+  display: inline-block;
+  background: #4361ee;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.1rem 0.55rem;
+  border-radius: 1rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+nav { display: flex; gap: 0.5rem; }
+
+nav a {
+  color: #4361ee;
+  text-decoration: none;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.12s;
+}
+nav a:hover { background: #e8edff; }
+
+/* ── Note form ───────────────────────────────────────────── */
+x2-note-form,
+.note-form { display: block; }
+
+.note-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.note-form input {
+  flex: 1;
+  padding: 0.6rem 0.85rem;
+  border: 2px solid #e2e5ea;
+  border-radius: 0.45rem;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  background: #fff;
+  transition: border-color 0.12s;
+}
+.note-form input:focus { border-color: #4361ee; }
+
+.note-form button {
+  padding: 0.6rem 1.2rem;
+  background: #4361ee;
+  color: #fff;
+  border: none;
+  border-radius: 0.45rem;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.12s;
+}
+.note-form button:hover { background: #3451d1; }
+
+/* ── Note list ───────────────────────────────────────────── */
+.stats {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 0.75rem;
+}
+
+ul { list-style: none; }
+
+.note-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0.85rem;
+  background: #fff;
+  border: 1px solid #e2e5ea;
+  border-radius: 0.5rem;
+  margin-bottom: 0.4rem;
+  transition: box-shadow 0.12s;
+}
+.note-item:hover { box-shadow: 0 1px 6px rgba(0,0,0,0.07); }
+
+.note-item input[type="checkbox"] {
+  width: 1.1rem;
+  height: 1.1rem;
+  cursor: pointer;
+  accent-color: #4361ee;
+  flex-shrink: 0;
+}
+
+.note-item span {
+  flex: 1;
+  word-break: break-word;
+}
+
+.note-item.done span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.note-item .delete {
+  background: none;
+  border: none;
+  color: #ccc;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0 0.25rem;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: color 0.12s;
+}
+.note-item .delete:hover { color: #e63946; }
+
+/* ── Empty state ─────────────────────────────────────────── */
+.empty {
+  text-align: center;
+  color: #aaa;
+  padding: 2.5rem 0;
+  font-size: 0.95rem;
+}
+
+/* ── About page ──────────────────────────────────────────── */
+.about { padding-top: 0.5rem; }
+.about h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+.about p { color: #555; line-height: 1.7; margin-bottom: 0.85rem; }
+.about a { color: #4361ee; text-decoration: none; }
+.about a:hover { text-decoration: underline; }
+
+code {
+  background: #edf0ff;
+  color: #3451d1;
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.25rem;
+  font-size: 0.88em;
+  font-family: ui-monospace, monospace;
+}
